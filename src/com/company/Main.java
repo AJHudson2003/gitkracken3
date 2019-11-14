@@ -27,7 +27,7 @@ public class Main {
         }
 
     }
-
+//fixed somethings
     public static void main(String[] args) {
         //inner and outer loop
         for (int i = 0; i < 3; i++) {
