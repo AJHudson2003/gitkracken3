@@ -27,6 +27,27 @@ public class Main {
         }
 
     }
+    
+    public static int martingale(){
+        int money = 1000;
+        int target = 1200;
+        int bet = 10;
+        boolean play = true;
+        while(money>bet){
+            boolean win = play;
+            if(win){
+                money += bet;
+                bet = 10;
+            }
+            else{
+                money -= bet;
+                bet *= 2;
+            }
+        }
+        System.out.println("Money: " + money);
+        return money;
+    }
+    
 //fixed somethings
     public static void main(String[] args) {
         //inner and outer loop
@@ -39,6 +60,7 @@ public class Main {
 
         rollASix();
         countBlocks(7);
+        martingale();
 
 
 
